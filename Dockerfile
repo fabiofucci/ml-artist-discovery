@@ -10,8 +10,10 @@ RUN groupadd -g 999 appuser && \
 
 USER appuser
 
-# expose port 8080
 EXPOSE 8080
+
+# ENV FLASK_ENV=development
+# ENV FLASK_DEBUG=1
 
 ENTRYPOINT ["python"]
 CMD ["app.py"]
