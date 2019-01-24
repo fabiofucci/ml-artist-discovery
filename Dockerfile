@@ -11,7 +11,7 @@ RUN groupadd -g 999 appuser && \
 USER appuser
 
 # expose port 8080
-# EXPOSE 8080
+EXPOSE 8080
 
 ENTRYPOINT ["python"]
 CMD ["app.py"]
